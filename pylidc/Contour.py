@@ -2,7 +2,6 @@ import sqlalchemy as sq
 from sqlalchemy.orm import relationship
 import numpy as np
 from ._Base import Base
-from .Scan import Scan
 from .Annotation import Annotation
 
 _off_limits = ['id','annotation_id','annotation',

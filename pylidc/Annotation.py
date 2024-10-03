@@ -1,4 +1,3 @@
-import os, warnings
 import sqlalchemy as sq
 from sqlalchemy.orm import relationship
 from ._Base import Base
@@ -11,8 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.path as mplpath
 
 # For CT volume visualizer.
-from matplotlib.patches import Rectangle
-from matplotlib.widgets import Slider, Button, CheckButtons
+from matplotlib.widgets import Slider, CheckButtons
 
 # For diameter estimation.
 from scipy.spatial.distance import pdist,squareform
@@ -26,10 +24,7 @@ try:
 except ImportError:
     # Old version compatible since marching_cubes replaced with marchin_cubes_lewiner in skimage 0.19.0
     from skimage.measure import marching_cubes_lewiner as marching_cubes
-from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-from scipy.spatial import Delaunay
-from scipy.ndimage import distance_transform_edt as dtrans
 
 
 feature_names = \

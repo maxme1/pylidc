@@ -1,6 +1,5 @@
 import numpy as np
 from .Scan import Scan
-from .Annotation import Annotation
 import matplotlib.pyplot as plt
 from skimage.measure import find_contours
 from matplotlib.widgets import Slider

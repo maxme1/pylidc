@@ -1,4 +1,3 @@
-import os, warnings
 import sqlalchemy as sq
 from sqlalchemy.orm import relationship
 from ._Base import Base
